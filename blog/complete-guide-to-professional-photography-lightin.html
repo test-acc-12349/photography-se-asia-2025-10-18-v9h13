@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Master professional photography lighting techniques in Southeast Asia. Learn LED lighting setup, color temperature control, and studio photography best practices.">
+    <meta name="keywords" content="photography lighting, LED lighting setup, studio photography, color temperature, professional photography, Southeast Asia">
+    <meta name="author" content="Photography SE Asia">
+    <meta property="og:title" content="Complete Guide to Professional Photography Lighting in SE Asia">
+    <meta property="og:description" content="Master professional photography lighting techniques with our comprehensive guide to LED lighting, studio setup, and color temperature control.">
+    <meta property="og:type" content="article">
+    <title>Complete Guide to Professional Photography Lighting in SE Asia</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+        
+        * {
+            font-family: 'Inter', sans-serif;
+        }
+        
+        .fade-in {
+            animation: fadeIn 0.6s ease-in;
+        }
+        
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .slide-in-left {
+            animation: slideInLeft 0.6s ease-out;
+        }
+        
+        @keyframes slideInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        
+        .slide-in-right {
+            animation: slideInRight 0.6s ease-out;
+        }
+        
+        @keyframes slideInRight {
+            from {
+                opacity: 0;
+                transform: translateX(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        
+        .hero-overlay {
+            background: linear-gradient(135deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.6) 100%);
+        }
+        
+        .btn-primary {
+            @apply inline-flex items-center justify-center px-8 py-3 bg-black text-white font-semibold rounded-lg hover:bg-gray-800 transform hover:scale-105 transition-all duration-300 ease-out focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-black;
+        }
+        
+        .btn-secondary {
+            @apply inline-flex items-center justify-center px-8 py-3 bg-white text-black font-semibold rounded-lg hover:bg-gray-100 transform hover:scale-105 transition-all duration-300 ease-out focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-400;
+        }
+        
+        .card-hover {
+            @apply transform hover:scale-105 hover:shadow-xl transition-all duration-300 ease-out;
+        }
+        
+        .accordion-item {
+            @apply border border-gray-200 rounded-lg mb-4 overflow-hidden transition-all duration-300;
+        }
+        
+        .accordion-button {
+            @apply w-full px-6 py-4 text-left font-semibold text-gray-900 bg-white hover:bg-gray-50 flex justify-between items-center transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-black;
+        }
+        
+        .accordion-button.active {
+            @apply bg-gray-100;
+        }
+        
+        .accordion-content {
+            @apply max-h-0 overflow-hidden transition-all duration-300 ease-out;
+        }
+        
+        .accordion-content.active {
+            @apply max-h-96;
+        }
+        
+        .feature-icon {
+            @apply text-4xl text-black mb-4;
+        }
+        
+        .sticky-header {
+            @apply sticky top-0 z-50 bg-white shadow-md;
+        }
+        
+        .announcement-bar {
+            @apply bg-black text-white py-2 px-4 text-center text-sm font-medium;
+        }
+        
+        .testimonial-card {
+            @apply bg-white rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow duration-300;
+        }
+        
+        .section-heading {
+            @apply text-4xl md:text-5xl font-bold text-gray-900 mb-4 tracking-tight;
+        }
+        
+        .section-subheading {
+            @apply text-xl text-gray-600 mb-12 leading-relaxed;
+        }
+
+        .blog-content {
+            @apply prose prose-lg max-w-none text-gray-700 leading-relaxed;
+        }
+
+        .blog-content h2 {
+            @apply text-3xl font-bold text-gray-900 mt-8 mb-4;
+        }
+
+        .blog-content h3 {
+            @apply text-2xl font-bold text-gray-900 mt-6 mb-3;
+        }
+
+        .blog-content p {
+            @apply mb-4 leading-relaxed;
+        }
+
+        .blog-content ul {
+            @apply list-disc list-inside mb-4 space-y-2;
+        }
+
+        .blog-content li {
+            @apply text-gray-700;
+        }
+
+        .blog-highlight {
+            @apply bg-gray-100 border-l-4 border-black p-4 my-6 rounded;
+        }
+    </style>
+</head>
+<body class="bg-white">
+    <!-- Announcement Bar -->
+    <div class="announcement-bar">
+        <p>🚚 Free worldwide shipping on orders over $50. Fast delivery in 5 days!</p>
+    </div>
+
+    <!-- Header -->
+    <header class="sticky-header">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+            <div class="flex items-center justify-between">
+                <a href="https://test-acc-12349.github.io/photography-se-asia-2025-10-18-v9h13" class="flex items-center space-x-2 hover:opacity-80 transition-opacity duration-300">
+                    <i class="fas fa-camera text-2xl text-black"></i>
+                    <span class="text-xl font-bold text-gray-900">Photography SE Asia</span>
+                </a>
+                <a href="https://test-acc-12349.github.io/photography-se-asia-2025-10-18-v9h13" class="text-gray-700 hover:text-black transition-colors duration-300 font-medium">
+                    ← Back
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Blog Content Section -->
+    <section class="py-16 md:py-24 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Blog Header -->
+            <div class="mb-12 fade-in">
+                <h1 class="section-heading">Complete Guide to Professional Photography Lighting in Southeast Asia</h1>
+                <p class="text-lg text-gray-600 mb-6">Master the art of professional lighting setup with our comprehensive guide to LED systems, color temperature control, and studio photography techniques.</p>
+                <div class="flex items-center text-sm text-gray-500 space-x-4">
+                    <span><i class="fas fa-calendar mr-2"></i>Published on December 2024</span>
+                    <span><i class="fas fa-clock mr-2"></i>12 min read</span>
+                </div>
+            </div>
+
+            <!-- Featured Image -->
+            <div class="mb-12 overflow-hidden rounded-lg shadow-lg fade-in">
+                <img src="https://images.unsplash.com/photo-1537628346881-500ee3f4f24f?w=1200&h=675&fit=crop&q=80" alt="Professional photography studio lighting setup with LED panels and reflectors" class="w-full h-auto object-cover">
+            </div>
+
+            <!-- Blog Content -->
+            <article class="blog-content fade-in">
+                <p>Professional photography lighting is the cornerstone of creating stunning images that captivate audiences and tell compelling visual stories. Whether you're a seasoned photographer or just starting your journey in Southeast Asia's vibrant creative scene, understanding lighting fundamentals is absolutely essential. This comprehensive guide will walk you through everything you need to know about professional photography lighting, from basic principles to advanced techniques that professional photographers use to create award-winning images.</p>
+
+                <h2>Understanding the Fundamentals of Professional Lighting</h2>
+
+                <p>Before diving into specific equipment and techniques, it's crucial to understand the fundamental principles that govern professional photography lighting. Lighting is not just about brightness; it's about creating mood, directing attention, and sculpting your subject with light and shadow.</p>
+
+                <p>The three fundamental concepts in professional lighting are quality, direction, and intensity. Quality refers to whether light is hard (creating sharp shadows) or soft (creating diffused shadows). Direction determines where the light comes from and how it shapes your subject. Intensity controls the brightness level and the ratio between highlights and shadows in your image.</p>
+
+                <p>In Southeast Asia's tropical climate, understanding how natural and artificial light interact is particularly important. The intense midday sun creates harsh shadows, while the golden hour—those magical hours after sunrise and before sunset—provides naturally beautiful, directional light that photographers dream about.</p>
+
+                <h2>The Rise of LED Lighting in Professional Photography</h2>
+
+                <p>LED lighting has revolutionized the photography industry over the past decade. Unlike traditional tungsten or fluorescent lights, LED panels offer photographers unprecedented control, efficiency, and flexibility. Professional photographers across Southeast Asia have embraced LED technology because it delivers consistent results while being energy-efficient and heat-free.</p>
+
+                <p>LED lighting systems are particularly advantageous for several reasons. They generate minimal heat, making them comfortable for both the photographer and subject during long shooting sessions. They're lightweight and portable, perfect for photographers working in diverse Southeast Asian locations from studio spaces in Bangkok to outdoor shoots in Bali. LED panels also offer dimming capabilities, allowing you to adjust intensity without changing color temperature—a feature that's invaluable in professional work.</p>
+
+                <p>The color rendering index (CRI) of quality LED panels typically exceeds 95, meaning they reproduce colors with exceptional accuracy. This is critical for professional photography where color accuracy directly impacts the final image quality and client satisfaction.</p>
+
+                <div class="blog-highlight">
+                    <p><strong>Pro Tip:</strong> When investing in LED lighting for your photography studio, prioritize panels with a CRI of 95 or higher. This ensures that the colors in your images accurately represent your subject, reducing the need for extensive color correction in post-processing.</p>
+                </div>
+
+                <h2>Essential LED Lighting Setup for Studio Photography</h2>
+
+                <p>Creating a professional lighting setup doesn't require an overwhelming number of lights. In fact, many professional photographers achieve exceptional results with just three lights: a key light, fill light, and back light.</p>
+
+                <h3>The Key Light</h3>
+
+                <p>The key light is your primary light source and should be the brightest and most directional. Positioned at approximately 45 degrees to the side of your subject, the key light creates the main shadows and defines the subject's form. For portrait photography, the key light is typically placed slightly above eye level to create flattering shadows on the face.</p>
+
+                <h3>The Fill Light</h3>
+
+                <p>The fill light serves to reduce the intensity of shadows created by the key light. Positioned opposite the key light, the fill light helps bring out details in shadow areas without completely eliminating them. Professional photographers typically set the fill light to about half the intensity of the key light, creating a natural-looking light ratio that adds dimension to the image.</p>
+
+                <h3>The Back Light</h3>
+
+                <p>Also called a rim light or hair light, the back light is positioned behind and slightly above the subject. This light separates the subject from the background, creating depth and dimension in your images. The back light is particularly effective in creating professional-looking portraits and product photography.</p>
+
+                <h2>Mastering Color Temperature in Professional Photography</h2>
+
+                <p>Color temperature is measured in Kelvin (K) and describes the warmth or coolness of light. Understanding and controlling color temperature is fundamental to professional photography work in Southeast Asia, where you'll encounter diverse lighting conditions from air-conditioned studios to tropical outdoor environments.</p>
+
+                <p>Daylight typically measures around 5500K, studio tungsten lights around 3200K, and LED panels can range from 2700K (warm) to 6500K (cool) or beyond. Professional photographers use color temperature to create specific moods: warmer light (3200-4000K) creates intimate, cozy atmospheres, while cooler light (5500-6500K) feels more energetic and clinical.</p>
+
+                <p>One of the greatest advantages of modern LED panels is their ability to adjust color temperature continuously. This allows photographers to match ambient light conditions or create intentional color casts for creative effect. For example, when shooting product photography in Southeast Asia's tropical environment, you might use slightly warmer LED light to complement the warm tones of the surrounding architecture and landscape.</p>
+
+                <h2>Advanced Lighting Techniques for Professional Results</h2>
+
+                <p>Once you've mastered basic three-point lighting, exploring advanced techniques will elevate your photography to professional levels. Butterfly lighting, created by positioning the key light directly in front and slightly above the subject, is flattering for portraits and creates a distinctive butterfly-shaped shadow under the nose. Loop lighting, achieved by moving the key light slightly to the side, creates a small loop shadow on the cheek and is the most versatile portrait lighting setup.</p>
+
+                <p>Rembrandt lighting, named after the Dutch master painter, uses a specific light ratio to create a triangle of light on the shadowed side of the face. This dramatic technique is perfect for creating artistic, professional portraits that stand out in portfolios.</p>
+
+                <p>For product photography—increasingly important for Southeast Asian e-commerce businesses—backlighting and side-lighting techniques create dimension and highlight texture. LED panels' controllability makes experimenting with these advanced techniques straightforward and repeatable.</p>
+
+                <h2>Practical Tips for Lighting in Southeast Asia's Unique Environment</h2>
+
+                <p>Southeast Asia's tropical climate presents unique challenges and opportunities for photographers. The intense, consistent heat and humidity require careful equipment management. Ensure your LED panels have proper ventilation and are kept in climate-controlled environments when not in use. The region's frequent power fluctuations make investing in quality surge protectors and uninterruptible power supplies essential for protecting expensive lighting equipment.</p>
+
+                <p>The abundance of reflective surfaces—from glass buildings in modern cities to water features in tropical landscapes—creates natural fill light opportunities. Professional photographers in Southeast Asia often use white reflectors to bounce key light into shadow areas, reducing the need for additional fill lights and creating more natural-looking results.</p>
+
+                <p>When working outdoors in Southeast Asia's intense sunlight, LED panels can supplement natural light. Use them as fill lights to reduce harsh shadows created by overhead sun, or as accent lights to add dimension to backlit subjects. The portability of modern LED panels makes this approach practical for location shoots throughout the region.</p>
+
+                <div class="blog-highlight">
+                    <p><strong>Important Consideration:</strong> When shooting in Southeast Asia's humid environment, always use lens hoods and protective filters on your camera equipment. The combination of heat and humidity can cause condensation inside lenses, potentially damaging your camera and affecting image quality.</p>
+                </div>
+
+                <h2>Selecting the Right Equipment for Your Needs</h2>
+
+                <p>Investing in professional lighting equipment requires careful consideration of your specific needs, budget, and shooting style. Entry-level LED panels (around 2-3 feet) are perfect for beginners and small studios, offering good light output in a compact package. Professional-grade panels (4-6 feet) provide more even light distribution and greater flexibility for larger setups.</p>
+
+                <p>Consider the color rendering index (CRI), adjustable color temperature range, dimming capability, and power consumption when selecting LED panels. For Southeast Asian photographers, portability and durability are particularly important given the region's climate and the likelihood of on-location shooting.</p>
+
+                <p>Quality light modifiers—softboxes, beauty dishes, and diffusion panels—are just as important as the lights themselves. These tools control light quality and direction, transforming raw light into sculpted, professional-looking illumination that enhances your images.</p>
+
+                <h2>Creating Consistency in Your Professional Photography</h2>
+
+                <p>One hallmark of professional photography is consistency. Clients expect that images shot on different days in different locations maintain consistent lighting and color quality. LED lighting systems make achieving this consistency significantly easier than with traditional lighting equipment.</p>
+
+                <p>Develop standardized lighting setups for your most common shooting scenarios—whether that's portrait sessions, product photography, or event coverage. Document your settings, including light positions, intensities, and color temperatures. This documentation becomes invaluable when recreating specific looks or training assistants.</p>
+
+                <p>Professional photographers in Southeast Asia often maintain detailed lighting notes for different seasons and times of year, accounting for the region's varying natural light conditions. This systematic approach ensures that clients receive consistent quality regardless of when their shoot takes place.</p>
+
+                <h2>Conclusion: Mastering Professional Lighting for Your Photography Career</h2>
+
+                <p>Professional photography lighting is both an art and a science. It requires understanding fundamental principles, investing in quality equipment, and practicing consistently to develop the intuitive sense that separates amateur from professional work. Southeast Asia's diverse environments—from modern urban studios to tropical outdoor locations—provide endless opportunities to develop and refine your lighting skills.</p>
+
+                <p>Whether you're photographing portraits, products, events, or architectural subjects, the lighting techniques and principles outlined in this guide will help you create images that clients love and that stand out in competitive markets. Start with basic three-point lighting, master color temperature control, and progressively explore advanced techniques as your skills develop.</p>
+
+                <p>Remember that professional-quality lighting equipment is an investment in your photography business. Quality LED panels from reputable manufacturers, combined with proper light modifiers and careful technique, will elevate your work and help you command professional rates for your services. The photographers achieving the most success in Southeast Asia's growing creative economy are those who understand that great lighting is the foundation of great photography.</p>
+
+                <p>Take the knowledge from this guide, apply it to your specific shooting scenarios, and continuously refine your approach. Your clients will notice the difference, and your portfolio will reflect the professional standards that define successful photography businesses throughout Southeast Asia.</p>
+            </article>
+
+            <!-- CTA Section -->
+            <div class="mt-16 p-8 bg-gray-50 rounded-xl border border-gray-200 fade-in">
+                <h3 class="text-2xl font-bold text-gray-900 mb-4">Ready to Upgrade Your Photography Lighting?</h3>
+                <p class="text-gray-700 mb-6">Explore our premium LED lighting collection and professional photography equipment to take your work to the next level.</p>
+                <a href="https://ledx.com" class="btn-primary">Shop Professional Lighting Equipment</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Related Articles Section -->
+    <section class="py-16 md:py-24 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12 md:mb-16">
+                <h2 class="section-heading">Related Articles</h2>
+                <p class="section-subheading">Explore more photography guides and tips</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Related Article 1 -->
+                <div class="card-hover bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300">
+                    <div class="h-48 bg-gradient-to-br from-gray-200 to-gray-300 flex items-center justify-center">
+                        <i class="fas fa-camera text-5xl text-gray-400"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-lg font-bold text-gray-900 mb-2">Portrait Photography Essentials</h3>
+                        <p class="text-gray-600 text-sm mb-4">Master the techniques professional portrait photographers use to create stunning headshots and character studies.</p>
+                        <a href="#" class="text-black font-semibold hover:text-gray-700 transition-colors duration-300">Read More →</a>
+                    </div>
+                </div>
+
+                <!-- Related Article 2 -->
+                <div class="card-hover bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300">
+                    <div class="h-48 bg-gradient-to-br from-blue-200 to-blue-300 flex items-center justify-center">
+                        <i class="fas fa-lightbulb text-5xl text-blue-400"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-lg font-bold text-gray-900 mb-2">Studio Setup Guide for Beginners</h3>
+                        <p class="text-gray-600 text-sm mb-4">Learn how to create a professional photography studio on a budget with practical setup tips and equipment recommendations.</p>
+                        <a href="#" class="text-black font-semibold hover:text-gray-700 transition-colors duration-300">Read More →</a>
+                    </div>
+                </div>
+
+                <!-- Related Article 3 -->
+                <div class="card-hover bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300">
+                    <div class="h-48 bg-gradient-to-br from-purple-200 to-purple-300 flex items-center justify-center">
+                        <i class="fas fa-video text-5xl text-purple-400"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-lg font-bold text-gray-900 mb-2">Product Photography Best Practices</h3>
+                        <p class="text-gray-600 text-sm mb-4">Discover professional techniques for photographing products that sell, including lighting, composition, and styling tips.</p>
+                        <a href="#" class="text-black font-semibold hover:text-gray-700 transition-colors duration-300">Read More →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="py-16 md:py-24 bg-white">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="section-heading">Stay Updated with Photography Tips</h2>
+            <p class="section-subheading">Subscribe to our newsletter for exclusive photography guides, equipment reviews, and professional tips delivered to your inbox.</p>
+            
+            <form class="flex flex-col sm:flex-row gap-4 max-w-md mx-auto" onsubmit="handleNewsletterSubmit(event)">
+                <input type="email" placeholder="Enter your email" required class="flex-1 px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-black transition-all duration-300" aria-label="Email address">
+                <button type="submit" class="btn-primary whitespace-nowrap">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-100 py-12 md:py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+                <!-- Brand Column -->
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <i class="fas fa-camera text-2xl text-white"></i>
+                        <span class="text-xl font-bold text-white">Photography SE Asia</span>
+                    </div>
+                    <p class="text-gray-400 text-sm leading-relaxed">Your trusted source for premium photography equipment across Southeast Asia.</p>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="font-semibold text-white mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="https://test-acc-12349.github.io/photography-se-asia-2025-10-18-v9h13#features" class="text-gray-400 hover:text-white transition-colors duration-300 text-sm">Features</a></li>
+                        <li><a href="https://test-acc-12349.github.io/photography-se-asia-2025-10-18-v9h13#benefits" class="text-gray-400 hover:text-white transition-colors duration-300 text-sm">Benefits</a></li>
+                        <li><a href="https://test-acc-12349.github.io/photography-se-asia-2025-10-18-v9h13#faq" class="text-gray-400 hover:text-white transition-colors duration-300 text-sm">FAQ</a></li>
+                        <li><a href="https://ledx.com" class="text-gray-400 hover:text-white transition-colors duration-300 text-sm">Shop</a></li>
+                    </ul>
+                </div>
+
+                <!-- Customer Service -->
+                <div>
+                    <h3 class="font-semibold text-white mb-4">Customer Service</h3>
+                    <ul class="space-y-2">
+                        <li><a href="https://test-acc-12349.github.io/photography-se-asia-2025-10-18-v9h13#contact" class="text-gray-400 hover:text-white transition-colors duration-300 text-sm">Contact Us</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-300 text-sm">Privacy Policy</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-300 text-sm">Terms & Conditions</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-300 text-sm">Blog</a></li>
+                    </ul>
+                </div>
+
+                <!-- Social Media -->
+                <div>
+                    <h3 class="font-semibold text-white mb-4">Follow Us</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center text-gray-400 hover:bg-white hover:text-gray-900 transition-all duration-300" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center text-gray-400 hover:bg-white hover:text-gray-900 transition-all duration-300" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center text-gray-400 hover:bg-white hover:text-gray-900 transition-all duration-300" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center text-gray-400 hover:bg-white hover:text-gray-900 transition-all duration-300" aria-label="YouTube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Divider -->
+            <div class="border-t border-gray-800 pt-8">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <p class="text-gray-400 text-sm mb-4 md:mb-0">&copy; 2024 Photography SE Asia. All rights reserved.</p>
+                    <div class="flex space-x-6">
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300 text-sm">Privacy Policy</a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300 text-sm">Terms of Service</a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300 text-sm">Cookie Settings</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        // Handle Newsletter Submit
+        function handleNewsletterSubmit(event) {
+            event.preventDefault();
+            const form = event.target;
+            const email = form.querySelector('input[type="email"]').value;
+            const button = form.querySelector('button[type="submit"]');
+            
+            const originalText = button.textContent;
+            button.textContent = 'Subscribed!';
+            button.disabled = true;
+
+            setTimeout(() => {
+                button.textContent = originalText;
+                button.disabled = false;
+                form.reset();
+            }, 3000);
+        }
+
+        // Smooth scroll behavior
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                const href = this.getAttribute('href');
+                if (href !== '#' && document.querySelector(href)) {
+                    e.preventDefault();
+                    document.querySelector(href).scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Add scroll animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -100px 0px'
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('fade-in');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.card-hover').forEach(el => {
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>
