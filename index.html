@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Photography SE Asia - Best Photography Kit In SE Asia. Shop premium LED lighting, tripods, and pro equipment with free delivery and fast shipping.">
+    <meta name="keywords" content="photography, camera equipment, LED lighting, tripods, SE Asia">
+    <meta name="author" content="Photography SE Asia">
+    <meta property="og:title" content="Photography SE Asia - Best Photography Kit In SE Asia">
+    <meta property="og:description" content="Shop premium photography equipment with free delivery and fast shipping.">
+    <meta property="og:type" content="website">
+    <title>Photography SE Asia - Premium Photography Equipment</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+        
+        * {
+            font-family: 'Inter', sans-serif;
+        }
+        
+        .fade-in {
+            animation: fadeIn 0.6s ease-in;
+        }
+        
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .slide-in-left {
+            animation: slideInLeft 0.6s ease-out;
+        }
+        
+        @keyframes slideInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        
+        .slide-in-right {
+            animation: slideInRight 0.6s ease-out;
+        }
+        
+        @keyframes slideInRight {
+            from {
+                opacity: 0;
+                transform: translateX(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        
+        .hero-overlay {
+            background: linear-gradient(135deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.6) 100%);
+        }
+        
+        .btn-primary {
+            @apply inline-flex items-center justify-center px-8 py-3 bg-black text-white font-semibold rounded-lg hover:bg-gray-800 transform hover:scale-105 transition-all duration-300 ease-out focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-black;
+        }
+        
+        .btn-secondary {
+            @apply inline-flex items-center justify-center px-8 py-3 bg-white text-black font-semibold rounded-lg hover:bg-gray-100 transform hover:scale-105 transition-all duration-300 ease-out focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-400;
+        }
+        
+        .card-hover {
+            @apply transform hover:scale-105 hover:shadow-xl transition-all duration-300 ease-out;
+        }
+        
+        .accordion-item {
+            @apply border border-gray-200 rounded-lg mb-4 overflow-hidden transition-all duration-300;
+        }
+        
+        .accordion-button {
+            @apply w-full px-6 py-4 text-left font-semibold text-gray-900 bg-white hover:bg-gray-50 flex justify-between items-center transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-black;
+        }
+        
+        .accordion-button.active {
+            @apply bg-gray-100;
+        }
+        
+        .accordion-content {
+            @apply max-h-0 overflow-hidden transition-all duration-300 ease-out;
+        }
+        
+        .accordion-content.active {
+            @apply max-h-96;
+        }
+        
+        .feature-icon {
+            @apply text-4xl text-black mb-4;
+        }
+        
+        .sticky-header {
+            @apply sticky top-0 z-50 bg-white shadow-md;
+        }
+        
+        .announcement-bar {
+            @apply bg-black text-white py-2 px-4 text-center text-sm font-medium;
+        }
+        
+        .testimonial-card {
+            @apply bg-white rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow duration-300;
+        }
+        
+        .section-heading {
+            @apply text-4xl md:text-5xl font-bold text-gray-900 mb-4 tracking-tight;
+        }
+        
+        .section-subheading {
+            @apply text-xl text-gray-600 mb-12 leading-relaxed;
+        }
+    </style>
+</head>
+<body class="bg-white">
+    <!-- Announcement Bar -->
+    <div class="announcement-bar">
+        <p>🚚 Free worldwide shipping on orders over $50. Fast delivery in 5 days!</p>
+    </div>
+
+    <!-- Header -->
+    <header class="sticky-header">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex items-center justify-between">
+            <!-- Logo -->
+            <div class="flex items-center space-x-2">
+                <i class="fas fa-camera text-2xl text-black"></i>
+                <span class="text-xl font-bold text-gray-900">Photography SE Asia</span>
+            </div>
+
+            <!-- Desktop Navigation -->
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="#features" class="text-gray-700 hover:text-black transition-colors duration-300 font-medium">Features</a>
+                <a href="#benefits" class="text-gray-700 hover:text-black transition-colors duration-300 font-medium">Benefits</a>
+                <a href="#faq" class="text-gray-700 hover:text-black transition-colors duration-300 font-medium">FAQ</a>
+                <a href="#contact" class="text-gray-700 hover:text-black transition-colors duration-300 font-medium">Contact</a>
+            </div>
+
+            <!-- Search and CTA -->
+            <div class="hidden md:flex items-center space-x-4">
+                <div class="relative">
+                    <input type="text" placeholder="Search products..." class="px-4 py-2 border border-gray-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-black transition-all duration-300" aria-label="Search products">
+                    <i class="fas fa-search absolute right-3 top-3 text-gray-400"></i>
+                </div>
+                <a href="https://ledx.com" class="btn-primary">Shop Now</a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button class="md:hidden p-2 rounded-lg hover:bg-gray-100 transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-black" aria-label="Toggle menu" onclick="toggleMobileMenu()">
+                <i class="fas fa-bars text-2xl text-gray-900"></i>
+            </button>
+        </nav>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-200">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 space-y-4">
+                <a href="#features" class="block text-gray-700 hover:text-black transition-colors duration-300 font-medium py-2">Features</a>
+                <a href="#benefits" class="block text-gray-700 hover:text-black transition-colors duration-300 font-medium py-2">Benefits</a>
+                <a href="#faq" class="block text-gray-700 hover:text-black transition-colors duration-300 font-medium py-2">FAQ</a>
+                <a href="#contact" class="block text-gray-700 hover:text-black transition-colors duration-300 font-medium py-2">Contact</a>
+                <a href="https://ledx.com" class="btn-primary block text-center">Shop Now</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative w-full h-screen md:h-[600px] overflow-hidden flex items-center justify-center">
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1504093376055-b3094b674dcb?w=1600&h=900&fit=crop&q=80" alt="Photography equipment showcase" class="w-full h-full object-cover">
+            <div class="hero-overlay absolute inset-0"></div>
+        </div>
+
+        <div class="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center fade-in">
+            <h1 class="text-4xl md:text-6xl font-bold text-white mb-4 tracking-tight leading-tight">Photography SE Asia</h1>
+            <p class="text-xl md:text-2xl text-gray-100 mb-8 leading-relaxed">Best Photography Kit In SE Asia</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="https://ledx.com" class="btn-primary">Explore Collection</a>
+                <button class="btn-secondary" onclick="document.getElementById('features').scrollIntoView({ behavior: 'smooth' })">Learn More</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-16 md:py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12 md:mb-16">
+                <h2 class="section-heading">Premium Photography Equipment</h2>
+                <p class="section-subheading">Everything you need for professional photography in Southeast Asia</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- LED Lighting Feature -->
+                <div class="card-hover bg-white p-8 rounded-xl border border-gray-200 hover:border-gray-300 transition-colors duration-300">
+                    <div class="feature-icon">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-3">LED Lighting</h3>
+                    <p class="text-gray-600 leading-relaxed mb-4">Professional-grade LED lighting systems designed for optimal color accuracy and consistent brightness. Perfect for studio and on-location shoots.</p>
+                    <ul class="space-y-2 text-sm text-gray-700">
+                        <li class="flex items-center"><i class="fas fa-check text-black mr-2"></i>Color temperature control</li>
+                        <li class="flex items-center"><i class="fas fa-check text-black mr-2"></i>Energy efficient</li>
+                        <li class="flex items-center"><i class="fas fa-check text-black mr-2"></i>Lightweight and portable</li>
+                    </ul>
+                </div>
+
+                <!-- Tripods Feature -->
+                <div class="card-hover bg-white p-8 rounded-xl border border-gray-200 hover:border-gray-300 transition-colors duration-300">
+                    <div class="feature-icon">
+                        <i class="fas fa-video"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-3">Professional Tripods</h3>
+                    <p class="text-gray-600 leading-relaxed mb-4">Heavy-duty tripods with advanced stabilization technology. Engineered for stability and precision in any shooting environment.</p>
+                    <ul class="space-y-2 text-sm text-gray-700">
+                        <li class="flex items-center"><i class="fas fa-check text-black mr-2"></i>Adjustable height up to 6 feet</li>
+                        <li class="flex items-center"><i class="fas fa-check text-black mr-2"></i>Quick-release plate system</li>
+                        <li class="flex items-center"><i class="fas fa-check text-black mr-2"></i>Durable aluminum construction</li>
+                    </ul>
+                </div>
+
+                <!-- Pro Equipment Feature -->
+                <div class="card-hover bg-white p-8 rounded-xl border border-gray-200 hover:border-gray-300 transition-colors duration-300">
+                    <div class="feature-icon">
+                        <i class="fas fa-camera"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-3">Pro Equipment</h3>
+                    <p class="text-gray-600 leading-relaxed mb-4">Complete range of professional photography equipment from industry-leading brands. Trusted by professionals worldwide.</p>
+                    <ul class="space-y-2 text-sm text-gray-700">
+                        <li class="flex items-center"><i class="fas fa-check text-black mr-2"></i>Premium lens collection</li>
+                        <li class="flex items-center"><i class="fas fa-check text-black mr-2"></i>Advanced camera bodies</li>
+                        <li class="flex items-center"><i class="fas fa-check text-black mr-2"></i>Accessories and filters</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section id="benefits" class="py-16 md:py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12 md:mb-16">
+                <h2 class="section-heading">Why Choose Us</h2>
+                <p class="section-subheading">Exceptional service and quality products delivered to your doorstep</p>
+            </div>
+
+            <!-- Benefit 1: Free Delivery - Text Left -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center mb-16 md:mb-24">
+                <div class="slide-in-left">
+                    <h3 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Free Delivery</h3>
+                    <p class="text-lg text-gray-600 mb-6 leading-relaxed">We offer completely free shipping on all orders across Southeast Asia. No hidden charges, no minimum purchase requirements. Your photography equipment arrives safely at your door.</p>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-black mr-3 mt-1 flex-shrink-0"></i>
+                            <span class="text-gray-700">Free shipping on all orders</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-black mr-3 mt-1 flex-shrink-0"></i>
+                            <span class="text-gray-700">Secure packaging and handling</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-black mr-3 mt-1 flex-shrink-0"></i>
+                            <span class="text-gray-700">Track your order in real-time</span>
+                        </li>
+                    </ul>
+                    <a href="https://ledx.com" class="btn-primary">Shop Free Delivery</a>
+                </div>
+                <div class="slide-in-right overflow-hidden rounded-xl shadow-lg">
+                    <img src="https://images.unsplash.com/photo-1556740714-a8395b3bf30f?w=800&h=600&fit=crop&q=80" alt="Free delivery packaging" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+                </div>
+            </div>
+
+            <!-- Benefit 2: Fast Shipping - Text Right -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center mb-16 md:mb-24">
+                <div class="slide-in-left overflow-hidden rounded-xl shadow-lg order-2 md:order-1">
+                    <img src="https://images.unsplash.com/photo-1502982720700-bfff97f2ecac?w=800&h=600&fit=crop&q=80" alt="Fast shipping service" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+                </div>
+                <div class="slide-in-right order-1 md:order-2">
+                    <h3 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Fast Shipping</h3>
+                    <p class="text-lg text-gray-600 mb-6 leading-relaxed">Get your photography equipment delivered within 5 business days. Our efficient logistics network ensures your orders arrive on time, every time. No delays, no excuses.</p>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-black mr-3 mt-1 flex-shrink-0"></i>
+                            <span class="text-gray-700">5-day delivery guarantee</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-black mr-3 mt-1 flex-shrink-0"></i>
+                            <span class="text-gray-700">Real-time tracking updates</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-black mr-3 mt-1 flex-shrink-0"></i>
+                            <span class="text-gray-700">Multiple shipping options</span>
+                        </li>
+                    </ul>
+                    <a href="https://ledx.com" class="btn-primary">Order Now</a>
+                </div>
+            </div>
+
+            <!-- Benefit 3: High Quality Products - Text Left -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
+                <div class="slide-in-left">
+                    <h3 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">High Quality Products</h3>
+                    <p class="text-lg text-gray-600 mb-6 leading-relaxed">We curate only the finest photography equipment from trusted manufacturers. Every product is quality-tested and guaranteed to meet professional standards for durability and performance.</p>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-black mr-3 mt-1 flex-shrink-0"></i>
+                            <span class="text-gray-700">Premium brand partnerships</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-black mr-3 mt-1 flex-shrink-0"></i>
+                            <span class="text-gray-700">Quality assurance testing</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-black mr-3 mt-1 flex-shrink-0"></i>
+                            <span class="text-gray-700">2-year warranty on all items</span>
+                        </li>
+                    </ul>
+                    <a href="https://ledx.com" class="btn-primary">Browse Quality Products</a>
+                </div>
+                <div class="slide-in-right overflow-hidden rounded-xl shadow-lg">
+                    <img src="https://images.unsplash.com/photo-1471341971476-ae15ff5dd4ea?w=800&h=600&fit=crop&q=80" alt="High quality photography products" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="relative py-16 md:py-24 overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1491796014055-e4835cdcd4c6?w=1600&h=800&fit=crop&q=80" alt="Photography studio background" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-gradient-to-r from-black via-black/80 to-black/60"></div>
+        </div>
+
+        <div class="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center fade-in">
+            <h2 class="text-4xl md:text-5xl font-bold text-white mb-4 tracking-tight">Ready to Upgrade Your Photography Game?</h2>
+            <p class="text-xl text-gray-100 mb-8 leading-relaxed">Join thousands of photographers across SE Asia who trust us for their equipment needs.</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="https://ledx.com" class="btn-primary">Start Shopping Today</a>
+                <button class="btn-secondary" onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })">Get in Touch</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-16 md:py-24 bg-gray-50">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12 md:mb-16">
+                <h2 class="section-heading">Frequently Asked Questions</h2>
+                <p class="section-subheading">Find answers to common questions about our products and services</p>
+            </div>
+
+            <div class="space-y-4">
+                <!-- FAQ Item 1 -->
+                <div class="accordion-item">
+                    <button class="accordion-button" onclick="toggleAccordion(this)">
+                        <span>What is your return policy?</span>
+                        <i class="fas fa-chevron-down transition-transform duration-300"></i>
+                    </button>
+                    <div class="accordion-content px-6 pb-4">
+                        <p class="text-gray-700 leading-relaxed">We offer a 100% Satisfaction Guarantee. If you're not completely satisfied with your purchase, you can return it within 30 days for a full refund. No questions asked. We want you to feel confident in every purchase.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 2 -->
+                <div class="accordion-item">
+                    <button class="accordion-button" onclick="toggleAccordion(this)">
+                        <span>How long does shipping take?</span>
+                        <i class="fas fa-chevron-down transition-transform duration-300"></i>
+                    </button>
+                    <div class="accordion-content px-6 pb-4">
+                        <p class="text-gray-700 leading-relaxed">We guarantee delivery within 5 business days across Southeast Asia. Orders are processed and shipped within 24 hours of purchase. You'll receive a tracking number via email so you can monitor your package every step of the way.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 3 -->
+                <div class="accordion-item">
+                    <button class="accordion-button" onclick="toggleAccordion(this)">
+                        <span>Is shipping really free?</span>
+                        <i class="fas fa-chevron-down transition-transform duration-300"></i>
+                    </button>
+                    <div class="accordion-content px-6 pb-4">
+                        <p class="text-gray-700 leading-relaxed">Yes! We offer completely free shipping on all orders to any location in Southeast Asia. There are no hidden fees, no minimum purchase requirements, and no exceptions. What you see is what you pay.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 4 -->
+                <div class="accordion-item">
+                    <button class="accordion-button" onclick="toggleAccordion(this)">
+                        <span>Do you offer warranty on products?</span>
+                        <i class="fas fa-chevron-down transition-transform duration-300"></i>
+                    </button>
+                    <div class="accordion-content px-6 pb-4">
+                        <p class="text-gray-700 leading-relaxed">All our products come with a 2-year manufacturer's warranty. This covers any defects in materials or workmanship. Additionally, we provide comprehensive customer support to help you get the most out of your equipment.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 5 -->
+                <div class="accordion-item">
+                    <button class="accordion-button" onclick="toggleAccordion(this)">
+                        <span>Can I track my order?</span>
+                        <i class="fas fa-chevron-down transition-transform duration-300"></i>
+                    </button>
+                    <div class="accordion-content px-6 pb-4">
+                        <p class="text-gray-700 leading-relaxed">Absolutely! Once your order ships, you'll receive a tracking number via email. You can use this number to track your package in real-time on our website or the carrier's website. We also send you updates at each stage of delivery.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 6 -->
+                <div class="accordion-item">
+                    <button class="accordion-button" onclick="toggleAccordion(this)">
+                        <span>What payment methods do you accept?</span>
+                        <i class="fas fa-chevron-down transition-transform duration-300"></i>
+                    </button>
+                    <div class="accordion-content px-6 pb-4">
+                        <p class="text-gray-700 leading-relaxed">We accept all major credit cards (Visa, Mastercard, American Express), digital wallets (Apple Pay, Google Pay), bank transfers, and local payment methods available in your region. Your payment is secure and encrypted.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-16 md:py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12 md:mb-16">
+                <h2 class="section-heading">What Our Customers Say</h2>
+                <p class="section-subheading">Real experiences from professional photographers across Southeast Asia</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-card fade-in">
+                    <div class="flex items-center mb-4">
+                        <div class="flex text-yellow-400">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 mb-4 leading-relaxed">"Photography SE Asia has been my go-to source for professional equipment. The quality is unmatched and the delivery is incredibly fast. Highly recommended!"</p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 bg-gray-300 rounded-full mr-4 flex items-center justify-center">
+                            <i class="fas fa-user text-gray-600"></i>
+                        </div>
+                        <div>
+                            <p class="font-semibold text-gray-900">Marcus Chen</p>
+                            <p class="text-sm text-gray-600">Professional Photographer, Bangkok</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="testimonial-card fade-in" style="animation-delay: 0.1s;">
+                    <div class="flex items-center mb-4">
+                        <div class="flex text-yellow-400">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 mb-4 leading-relaxed">"Free shipping and fast delivery? Count me in! The equipment arrived in perfect condition. This is the best photography store in SE Asia."</p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 bg-gray-300 rounded-full mr-4 flex items-center justify-center">
+                            <i class="fas fa-user text-gray-600"></i>
+                        </div>
+                        <div>
+                            <p class="font-semibold text-gray-900">Sarah Williams</p>
+                            <p class="text-sm text-gray-600">Freelance Photographer, Singapore</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="testimonial-card fade-in" style="animation-delay: 0.2s;">
+                    <div class="flex items-center mb-4">
+                        <div class="flex text-yellow-400">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 mb-4 leading-relaxed">"The quality of their LED lighting systems is exceptional. I've been using them for my studio for over a year now. Absolutely worth it!"</p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 bg-gray-300 rounded-full mr-4 flex items-center justify-center">
+                            <i class="fas fa-user text-gray-600"></i>
+                        </div>
+                        <div>
+                            <p class="font-semibold text-gray-900">David Nguyen</p>
+                            <p class="text-sm text-gray-600">Studio Owner, Ho Chi Minh City</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Policies Section -->
+    <section class="py-16 md:py-24 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
+                <!-- Shipping Policy -->
+                <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-truck text-3xl text-black mr-4"></i>
+                        <h3 class="text-2xl font-bold text-gray-900">Shipping Policy</h3>
+                    </div>
+                    <p class="text-gray-700 leading-relaxed">
+                        <strong>Fast Worldwide Shipping (5 days delivery)</strong><br><br>
+                        We offer fast, reliable shipping to all locations across Southeast Asia. All orders are processed within 24 hours and shipped with tracking information. Enjoy free shipping on all orders with no hidden fees.
+                    </p>
+                </div>
+
+                <!-- Returns Policy -->
+                <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-redo text-3xl text-black mr-4"></i>
+                        <h3 class="text-2xl font-bold text-gray-900">Returns Policy</h3>
+                    </div>
+                    <p class="text-gray-700 leading-relaxed">
+                        <strong>100% Satisfaction Guarantee - Full refund upon return</strong><br><br>
+                        We stand behind every product we sell. If you're not completely satisfied, return your item within 30 days for a full refund. Your satisfaction is our priority.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 md:py-24 bg-white">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12 md:mb-16">
+                <h2 class="section-heading">Get in Touch</h2>
+                <p class="section-subheading">Have questions? We're here to help. Contact us anytime.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+                <!-- Contact Info -->
+                <div class="space-y-6">
+                    <div class="flex items-start">
+                        <i class="fas fa-envelope text-2xl text-black mr-4 mt-1 flex-shrink-0"></i>
+                        <div>
+                            <h3 class="font-semibold text-gray-900 mb-1">Email</h3>
+                            <a href="mailto:adminx@led.com" class="text-gray-700 hover:text-black transition-colors duration-300">adminx@led.com</a>
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <i class="fas fa-globe text-2xl text-black mr-4 mt-1 flex-shrink-0"></i>
+                        <div>
+                            <h3 class="font-semibold text-gray-900 mb-1">Website</h3>
+                            <a href="https://ledx.com" class="text-gray-700 hover:text-black transition-colors duration-300">https://ledx.com</a>
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <i class="fas fa-clock text-2xl text-black mr-4 mt-1 flex-shrink-0"></i>
+                        <div>
+                            <h3 class="font-semibold text-gray-900 mb-1">Business Hours</h3>
+                            <p class="text-gray-700">Monday - Sunday: 9:00 AM - 6:00 PM (SGT)</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <form class="space-y-4" onsubmit="handleFormSubmit(event)">
+                    <div>
+                        <label for="name" class="block text-sm font-semibold text-gray-900 mb-2">Name</label>
+                        <input type="text" id="name" name="name" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-black transition-all duration-300" placeholder="Your name" aria-label="Your name">
+                    </div>
+                    <div>
+                        <label for="email" class="block text-sm font-semibold text-gray-900 mb-2">Email</label>
+                        <input type="email" id="email" name="email" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-black transition-all duration-300" placeholder="your@email.com" aria-label="Your email">
+                    </div>
+                    <div>
+                        <label for="message" class="block text-sm font-semibold text-gray-900 mb-2">Message</label>
+                        <textarea id="message" name="message" required rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-black transition-all duration-300" placeholder="Your message..." aria-label="Your message"></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary w-full">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-100 py-12 md:py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+                <!-- Brand Column -->
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <i class="fas fa-camera text-2xl text-white"></i>
+                        <span class="text-xl font-bold text-white">Photography SE Asia</span>
+                    </div>
+                    <p class="text-gray-400 text-sm leading-relaxed">Your trusted source for premium photography equipment across Southeast Asia.</p>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="font-semibold text-white mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#features" class="text-gray-400 hover:text-white transition-colors duration-300 text-sm">Features</a></li>
+                        <li><a href="#benefits" class="text-gray-400 hover:text-white transition-colors duration-300 text-sm">Benefits</a></li>
+                        <li><a href="#faq" class="text-gray-400 hover:text-white transition-colors duration-300 text-sm">FAQ</a></li>
+                        <li><a href="https://ledx.com" class="text-gray-400 hover:text-white transition-colors duration-300 text-sm">Shop</a></li>
+                    </ul>
+                </div>
+
+                <!-- Customer Service -->
+                <div>
+                    <h3 class="font-semibold text-white mb-4">Customer Service</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#contact" class="text-gray-400 hover:text-white transition-colors duration-300 text-sm">Contact Us</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-300 text-sm">Privacy Policy</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-300 text-sm">Terms & Conditions</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-300 text-sm">Blog</a></li>
+                    </ul>
+                </div>
+
+                <!-- Social Media -->
+                <div>
+                    <h3 class="font-semibold text-white mb-4">Follow Us</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center text-gray-400 hover:bg-white hover:text-gray-900 transition-all duration-300" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center text-gray-400 hover:bg-white hover:text-gray-900 transition-all duration-300" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center text-gray-400 hover:bg-white hover:text-gray-900 transition-all duration-300" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center text-gray-400 hover:bg-white hover:text-gray-900 transition-all duration-300" aria-label="YouTube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Divider -->
+            <div class="border-t border-gray-800 pt-8">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <p class="text-gray-400 text-sm mb-4 md:mb-0">&copy; 2024 Photography SE Asia. All rights reserved.</p>
+                    <div class="flex space-x-6">
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300 text-sm">Privacy Policy</a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300 text-sm">Terms of Service</a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300 text-sm">Cookie Settings</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        // Toggle Mobile Menu
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        }
+
+        // Close mobile menu when a link is clicked
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                document.getElementById('mobile-menu').classList.add('hidden');
+            });
+        });
+
+        // Toggle Accordion
+        function toggleAccordion(button) {
+            const content = button.nextElementSibling;
+            const icon = button.querySelector('i');
+            const isActive = content.classList.contains('active');
+
+            // Close all other accordions
+            document.querySelectorAll('.accordion-content').forEach(item => {
+                item.classList.remove('active');
+            });
+            document.querySelectorAll('.accordion-button').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            document.querySelectorAll('.accordion-button i').forEach(i => {
+                i.style.transform = 'rotate(0deg)';
+            });
+
+            // Toggle current accordion
+            if (!isActive) {
+                content.classList.add('active');
+                button.classList.add('active');
+                icon.style.transform = 'rotate(180deg)';
+            }
+        }
+
+        // Handle Form Submit
+        function handleFormSubmit(event) {
+            event.preventDefault();
+            const form = event.target;
+            const name = form.querySelector('#name').value;
+            const email = form.querySelector('#email').value;
+            const message = form.querySelector('#message').value;
+
+            // Create mailto link
+            const subject = 'New Contact Form Submission';
+            const body = `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`;
+            const mailtoLink = `mailto:adminx@led.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+
+            // Open email client
+            window.location.href = mailtoLink;
+
+            // Show success message
+            const submitButton = form.querySelector('button[type="submit"]');
+            const originalText = submitButton.textContent;
+            submitButton.textContent = 'Message Sent!';
+            submitButton.disabled = true;
+
+            setTimeout(() => {
+                submitButton.textContent = originalText;
+                submitButton.disabled = false;
+                form.reset();
+            }, 3000);
+        }
+
+        // Smooth scroll behavior
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                const href = this.getAttribute('href');
+                if (href !== '#' && document.querySelector(href)) {
+                    e.preventDefault();
+                    document.querySelector(href).scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Add scroll animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -100px 0px'
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('fade-in');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.card-hover, .testimonial-card').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Add active state to navigation links on scroll
+        window.addEventListener('scroll', () => {
+            let current = '';
+            const sections = document.querySelectorAll('section[id]');
+
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (pageYOffset >= sectionTop - 200) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            document.querySelectorAll('nav a[href^="#"]').forEach(link => {
+                link.classList.remove('text-black', 'font-bold');
+                link.classList.add('text-gray-700');
+                if (link.getAttribute('href').slice(1) === current) {
+                    link.classList.remove('text-gray-700');
+                    link.classList.add('text-black', 'font-bold');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
