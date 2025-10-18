@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Photography SE Asia Blog - Expert guides on professional photography equipment, LED lighting, tripods, and photography techniques for Southeast Asia.">
+    <meta name="keywords" content="photography blog, photography guide, LED lighting, camera equipment, professional photography, Southeast Asia">
+    <meta name="author" content="Photography SE Asia">
+    <meta property="og:title" content="Photography SE Asia Blog - Professional Photography Guides">
+    <meta property="og:description" content="Expert photography guides and tips for professional photographers in Southeast Asia.">
+    <meta property="og:type" content="website">
+    <title>Photography SE Asia Blog - Professional Photography Guides</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+        
+        * {
+            font-family: 'Inter', sans-serif;
+        }
+        
+        .fade-in {
+            animation: fadeIn 0.6s ease-in;
+        }
+        
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .slide-in-left {
+            animation: slideInLeft 0.6s ease-out;
+        }
+        
+        @keyframes slideInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        
+        .slide-in-right {
+            animation: slideInRight 0.6s ease-out;
+        }
+        
+        @keyframes slideInRight {
+            from {
+                opacity: 0;
+                transform: translateX(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        
+        .hero-overlay {
+            background: linear-gradient(135deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.6) 100%);
+        }
+        
+        .btn-primary {
+            @apply inline-flex items-center justify-center px-8 py-3 bg-black text-white font-semibold rounded-lg hover:bg-gray-800 transform hover:scale-105 transition-all duration-300 ease-out focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-black;
+        }
+        
+        .btn-secondary {
+            @apply inline-flex items-center justify-center px-8 py-3 bg-white text-black font-semibold rounded-lg hover:bg-gray-100 transform hover:scale-105 transition-all duration-300 ease-out focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-400;
+        }
+        
+        .card-hover {
+            @apply transform hover:scale-105 hover:shadow-xl transition-all duration-300 ease-out;
+        }
+        
+        .feature-icon {
+            @apply text-4xl text-black mb-4;
+        }
+        
+        .sticky-header {
+            @apply sticky top-0 z-50 bg-white shadow-md;
+        }
+        
+        .announcement-bar {
+            @apply bg-black text-white py-2 px-4 text-center text-sm font-medium;
+        }
+        
+        .testimonial-card {
+            @apply bg-white rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow duration-300;
+        }
+        
+        .section-heading {
+            @apply text-4xl md:text-5xl font-bold text-gray-900 mb-4 tracking-tight;
+        }
+        
+        .section-subheading {
+            @apply text-xl text-gray-600 mb-12 leading-relaxed;
+        }
+
+        .blog-card {
+            @apply bg-white rounded-xl p-8 shadow-md hover:shadow-lg transition-all duration-300 border border-gray-200 hover:border-gray-300;
+        }
+
+        .blog-date {
+            @apply text-sm font-medium text-gray-500 mb-3;
+        }
+
+        .blog-title {
+            @apply text-3xl font-bold text-gray-900 mb-4 leading-tight;
+        }
+
+        .blog-excerpt {
+            @apply text-lg text-gray-600 mb-6 leading-relaxed line-clamp-4;
+        }
+
+        .read-more-btn {
+            @apply inline-flex items-center px-6 py-2 bg-black text-white font-semibold rounded-lg hover:bg-gray-800 transform hover:scale-105 transition-all duration-300 ease-out focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-black;
+        }
+    </style>
+</head>
+<body class="bg-white">
+    <!-- Announcement Bar -->
+    <div class="announcement-bar">
+        <p>🚚 Free worldwide shipping on orders over $50. Fast delivery in 5 days!</p>
+    </div>
+
+    <!-- Header -->
+    <header class="sticky-header">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex items-center justify-between">
+            <!-- Logo -->
+            <a href="https://test-acc-12349.github.io/photography-se-asia-2025-10-18-v9h13" class="flex items-center space-x-2 hover:opacity-80 transition-opacity duration-300">
+                <i class="fas fa-camera text-2xl text-black"></i>
+                <span class="text-xl font-bold text-gray-900">Photography SE Asia</span>
+            </a>
+
+            <!-- Back Link -->
+            <a href="https://test-acc-12349.github.io/photography-se-asia-2025-10-18-v9h13" class="text-gray-700 hover:text-black transition-colors duration-300 font-medium">
+                ← Back
+            </a>
+        </nav>
+    </header>
+
+    <!-- Blog Header Section -->
+    <section class="py-16 md:py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12 md:mb-16">
+                <h1 class="section-heading">Our Blog</h1>
+                <p class="section-subheading">Expert insights and professional guides for photography enthusiasts and professionals</p>
+            </div>
+
+            <!-- Blog Purpose Section -->
+            <div class="max-w-3xl mx-auto mb-16 md:mb-24">
+                <div class="bg-gray-50 rounded-xl p-8 border border-gray-200">
+                    <h2 class="text-2xl font-bold text-gray-900 mb-4">Welcome to Our Photography Blog</h2>
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        Discover comprehensive guides, professional tips, and industry insights designed to elevate your photography skills. Whether you're a beginner exploring the fundamentals or an experienced professional seeking advanced techniques, our blog covers everything from equipment reviews to lighting strategies, post-processing workflows, and creative composition methods.
+                    </p>
+                    <p class="text-gray-700 leading-relaxed">
+                        Our expert contributors share real-world experience and practical knowledge tailored specifically for photographers working in Southeast Asia's unique environment. Learn how to master professional equipment, optimize your shooting techniques, and achieve stunning results in any lighting condition.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Blog Post -->
+    <section class="py-16 md:py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="mb-12">
+                <h2 class="text-2xl font-bold text-gray-900 mb-8">Featured Post</h2>
+            </div>
+
+            <div class="blog-card card-hover fade-in">
+                <div class="blog-date">
+                    <i class="fas fa-calendar-alt mr-2"></i>Published on October 18, 2025
+                </div>
+                <h3 class="blog-title">Complete Guide to Professional Photography Lighting in Southeast Asia</h3>
+                <p class="blog-excerpt">
+                    Master professional photography lighting with this comprehensive guide covering LED systems, color temperature control, and studio techniques. Learn the fundamentals of light quality, direction, and intensity, then explore advanced three-point lighting setups using key, fill, and back lights. Discover how LED technology revolutionizes modern photography through heat-free operation, portability, and precise color rendering. Explore specialized techniques like butterfly, loop, and Rembrandt lighting for portraits. Navigate Southeast Asia's unique tropical environment with practical tips for managing equipment in humid conditions. Develop consistent lighting approaches for various shooting scenarios, from studio portraits to product photography, elevating your professional results.
+                </p>
+                <a href="https://test-acc-12349.github.io/photography-se-asia-2025-10-18-v9h13/blog/complete-guide-to-professional-photography-lightin.html" class="read-more-btn">
+                    Read More
+                    <i class="fas fa-arrow-right ml-2"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recent Blog Posts Grid -->
+    <section class="py-16 md:py-24 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="mb-12">
+                <h2 class="text-2xl font-bold text-gray-900 mb-8">Recent Posts</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Blog Post Placeholder 1 -->
+                <div class="blog-card card-hover fade-in" style="animation-delay: 0.1s;">
+                    <div class="blog-date">
+                        <i class="fas fa-calendar-alt mr-2"></i>Coming Soon
+                    </div>
+                    <h3 class="blog-title text-2xl">Choosing the Right Tripod for Professional Photography</h3>
+                    <p class="blog-excerpt">
+                        Explore the essential features of professional tripods and learn how to select the perfect one for your specific photography needs...
+                    </p>
+                    <div class="opacity-50 cursor-not-allowed inline-flex items-center px-6 py-2 bg-gray-300 text-gray-600 font-semibold rounded-lg">
+                        Coming Soon
+                    </div>
+                </div>
+
+                <!-- Blog Post Placeholder 2 -->
+                <div class="blog-card card-hover fade-in" style="animation-delay: 0.2s;">
+                    <div class="blog-date">
+                        <i class="fas fa-calendar-alt mr-2"></i>Coming Soon
+                    </div>
+                    <h3 class="blog-title text-2xl">Portrait Photography: Mastering the Art of Flattering Light</h3>
+                    <p class="blog-excerpt">
+                        Discover professional portrait lighting techniques that enhance facial features and create compelling images...
+                    </p>
+                    <div class="opacity-50 cursor-not-allowed inline-flex items-center px-6 py-2 bg-gray-300 text-gray-600 font-semibold rounded-lg">
+                        Coming Soon
+                    </div>
+                </div>
+
+                <!-- Blog Post Placeholder 3 -->
+                <div class="blog-card card-hover fade-in" style="animation-delay: 0.3s;">
+                    <div class="blog-date">
+                        <i class="fas fa-calendar-alt mr-2"></i>Coming Soon
+                    </div>
+                    <h3 class="blog-title text-2xl">Product Photography: Lighting and Setup Strategies</h3>
+                    <p class="blog-excerpt">
+                        Master the technical aspects of product photography with professional lighting setups and composition techniques...
+                    </p>
+                    <div class="opacity-50 cursor-not-allowed inline-flex items-center px-6 py-2 bg-gray-300 text-gray-600 font-semibold rounded-lg">
+                        Coming Soon
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Categories Section -->
+    <section class="py-16 md:py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12 md:mb-16">
+                <h2 class="section-heading">Blog Categories</h2>
+                <p class="section-subheading">Browse our content by topic</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Category Card 1 -->
+                <div class="bg-white p-6 rounded-xl border border-gray-200 hover:border-gray-300 hover:shadow-lg transition-all duration-300 text-center">
+                    <i class="fas fa-lightbulb text-4xl text-black mb-4"></i>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Lighting Techniques</h3>
+                    <p class="text-gray-600 text-sm">Master professional lighting setups and techniques</p>
+                </div>
+
+                <!-- Category Card 2 -->
+                <div class="bg-white p-6 rounded-xl border border-gray-200 hover:border-gray-300 hover:shadow-lg transition-all duration-300 text-center">
+                    <i class="fas fa-camera text-4xl text-black mb-4"></i>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Equipment Reviews</h3>
+                    <p class="text-gray-600 text-sm">In-depth reviews of photography gear and accessories</p>
+                </div>
+
+                <!-- Category Card 3 -->
+                <div class="bg-white p-6 rounded-xl border border-gray-200 hover:border-gray-300 hover:shadow-lg transition-all duration-300 text-center">
+                    <i class="fas fa-palette text-4xl text-black mb-4"></i>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Creative Techniques</h3>
+                    <p class="text-gray-600 text-sm">Explore advanced composition and creative methods</p>
+                </div>
+
+                <!-- Category Card 4 -->
+                <div class="bg-white p-6 rounded-xl border border-gray-200 hover:border-gray-300 hover:shadow-lg transition-all duration-300 text-center">
+                    <i class="fas fa-video text-4xl text-black mb-4"></i>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Video Production</h3>
+                    <p class="text-gray-600 text-sm">Professional video filming and production tips</p>
+                </div>
+
+                <!-- Category Card 5 -->
+                <div class="bg-white p-6 rounded-xl border border-gray-200 hover:border-gray-300 hover:shadow-lg transition-all duration-300 text-center">
+                    <i class="fas fa-edit text-4xl text-black mb-4"></i>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Post-Processing</h3>
+                    <p class="text-gray-600 text-sm">Photo editing workflows and enhancement techniques</p>
+                </div>
+
+                <!-- Category Card 6 -->
+                <div class="bg-white p-6 rounded-xl border border-gray-200 hover:border-gray-300 hover:shadow-lg transition-all duration-300 text-center">
+                    <i class="fas fa-globe text-4xl text-black mb-4"></i>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Travel Photography</h3>
+                    <p class="text-gray-600 text-sm">Tips for photography in Southeast Asia</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="relative py-16 md:py-24 overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1491796014055-e4835cdcd4c6?w=1600&h=800&fit=crop&q=80" alt="Photography studio background" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-gradient-to-r from-black via-black/80 to-black/60"></div>
+        </div>
+
+        <div class="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center fade-in">
+            <h2 class="text-4xl md:text-5xl font-bold text-white mb-4 tracking-tight">Ready to Upgrade Your Photography Game?</h2>
+            <p class="text-xl text-gray-100 mb-8 leading-relaxed">Explore our premium photography equipment and put these techniques into practice.</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="https://ledx.com" class="btn-primary">Shop Equipment</a>
+                <a href="https://test-acc-12349.github.io/photography-se-asia-2025-10-18-v9h13" class="btn-secondary">Back to Home</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="py-16 md:py-24 bg-white">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-gray-50 rounded-xl p-8 md:p-12 border border-gray-200 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Stay Updated</h2>
+                <p class="text-lg text-gray-600 mb-8">Subscribe to our newsletter for the latest photography tips, equipment reviews, and exclusive content delivered to your inbox.</p>
+                <form class="flex flex-col sm:flex-row gap-3" onsubmit="handleNewsletterSubmit(event)">
+                    <input type="email" placeholder="Enter your email" required class="flex-1 px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-black transition-all duration-300" aria-label="Email for newsletter">
+                    <button type="submit" class="btn-primary">Subscribe</button>
+                </form>
+                <p class="text-sm text-gray-500 mt-4">We respect your privacy. Unsubscribe at any time.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-100 py-12 md:py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+                <!-- Brand Column -->
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <i class="fas fa-camera text-2xl text-white"></i>
+                        <span class="text-xl font-bold text-white">Photography SE Asia</span>
+                    </div>
+                    <p class="text-gray-400 text-sm leading-relaxed">Your trusted source for premium photography equipment across Southeast Asia.</p>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="font-semibold text-white mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="https://test-acc-12349.github.io/photography-se-asia-2025-10-18-v9h13" class="text-gray-400 hover:text-white transition-colors duration-300 text-sm">Home</a></li>
+                        <li><a href="https://test-acc-12349.github.io/photography-se-asia-2025-10-18-v9h13" class="text-gray-400 hover:text-white transition-colors duration-300 text-sm">Features</a></li>
+                        <li><a href="https://test-acc-12349.github.io/photography-se-asia-2025-10-18-v9h13" class="text-gray-400 hover:text-white transition-colors duration-300 text-sm">Benefits</a></li>
+                        <li><a href="https://ledx.com" class="text-gray-400 hover:text-white transition-colors duration-300 text-sm">Shop</a></li>
+                    </ul>
+                </div>
+
+                <!-- Customer Service -->
+                <div>
+                    <h3 class="font-semibold text-white mb-4">Customer Service</h3>
+                    <ul class="space-y-2">
+                        <li><a href="https://test-acc-12349.github.io/photography-se-asia-2025-10-18-v9h13#contact" class="text-gray-400 hover:text-white transition-colors duration-300 text-sm">Contact Us</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-300 text-sm">Privacy Policy</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-300 text-sm">Terms & Conditions</a></li>
+                        <li><a href="https://test-acc-12349.github.io/photography-se-asia-2025-10-18-v9h13/blog" class="text-gray-400 hover:text-white transition-colors duration-300 text-sm">Blog</a></li>
+                    </ul>
+                </div>
+
+                <!-- Social Media -->
+                <div>
+                    <h3 class="font-semibold text-white mb-4">Follow Us</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center text-gray-400 hover:bg-white hover:text-gray-900 transition-all duration-300" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center text-gray-400 hover:bg-white hover:text-gray-900 transition-all duration-300" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center text-gray-400 hover:bg-white hover:text-gray-900 transition-all duration-300" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center text-gray-400 hover:bg-white hover:text-gray-900 transition-all duration-300" aria-label="YouTube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Divider -->
+            <div class="border-t border-gray-800 pt-8">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <p class="text-gray-400 text-sm mb-4 md:mb-0">&copy; 2024 Photography SE Asia. All rights reserved.</p>
+                    <div class="flex space-x-6">
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300 text-sm">Privacy Policy</a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300 text-sm">Terms of Service</a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300 text-sm">Cookie Settings</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        // Handle Newsletter Submit
+        function handleNewsletterSubmit(event) {
+            event.preventDefault();
+            const form = event.target;
+            const email = form.querySelector('input[type="email"]').value;
+            const button = form.querySelector('button[type="submit"]');
+            const originalText = button.textContent;
+
+            // Show success message
+            button.textContent = 'Subscribed!';
+            button.disabled = true;
+
+            setTimeout(() => {
+                button.textContent = originalText;
+                button.disabled = false;
+                form.reset();
+            }, 3000);
+        }
+
+        // Smooth scroll behavior
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                const href = this.getAttribute('href');
+                if (href !== '#' && document.querySelector(href)) {
+                    e.preventDefault();
+                    document.querySelector(href).scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Add scroll animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -100px 0px'
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('fade-in');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.card-hover, .blog-card').forEach(el => {
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>
